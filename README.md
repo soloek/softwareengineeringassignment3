@@ -36,7 +36,7 @@
  |test_valid_triangle_degenerate_boundary|Yes|Kept|N/A (The whole assertion thing was in my code, not with this)|
  |test_equilateral_triangle|Yes|Kept|N/A|
  |test_isoceles_triangle|Yes|Changed|It initially said 3,3,3 but I changed it to 6,6,4 which made it isoceles|
- |test_right_isoceles_triangle|Yes|Changed|The final number was a decimal, I changed it to get the number using math.sqrt|
+ |test_right_isoceles_triangle|Yes|Changed|The final number was a decimal, I changed it to get the number using math.sqrt to put in a non-integer|
  |test_scalene_triangle|Yes|Kept|N/A|
  |test_right_scalene|Yes|Kept|N/A|
  
