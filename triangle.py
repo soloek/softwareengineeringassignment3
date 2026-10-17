@@ -1,4 +1,4 @@
-def is_valid_triangle(a, b, c):
+def is_valid_triangle(a, b, c) -> bool:
     """
     Checks if the inputted sides form a valid triangle.
 
@@ -16,4 +16,27 @@ def is_valid_triangle(a, b, c):
         return False
     else:
         return True
-    
+def classify_triangle(a,b,c) -> str:
+    """
+    Classifies what kind of triangle would be made from three inputted side lengths
+
+    Parameters:
+    a(float): Length of side a.
+    b(float): Length of side b.
+    c( float): Length of side c.
+    """
+    triangletype = ""
+    if is_valid_triangle(a,b,c) == False:
+        triangletype="Invalid"
+        return triangletype
+    if a==b and b==c:
+        triangletype="Equilateral"
+        return triangletype
+    if (a**a) + (b**b) == (c**c) or (a**a) + (c**c) == (b**b) or (b**b) + (c**c) == (a**a):
+        triangletype+="Right "
+    if a==b or b==c or a==c:
+        triangletype+="Isosceles"
+        return triangletype
+    else:
+        triangletype+="Scalene"
+        return triangletype
