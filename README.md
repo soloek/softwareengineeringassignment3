@@ -20,6 +20,7 @@
  
  Copilot review log:
  |Test|Copilot-suggested?|Kept/edited/rejected|Why|
+ | --- | --- | --- | ---|
  |test_valid_triangle_zero_sides|Yes|Kept|N/A|
  |test_valid_triangle_one_side_zero|Yes|Kept|N/A|
  |test_valid_triangle_negative_sides|Yes|Kept|N/A|
