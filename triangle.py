@@ -1,3 +1,4 @@
+import math
 def is_valid_triangle(a, b, c) -> bool:
     """
     Checks if the inputted sides form a valid triangle.
@@ -32,7 +33,7 @@ def classify_triangle(a,b,c) -> str:
     if a==b and b==c:
         triangletype="Equilateral"
         return triangletype
-    if (a**a) + (b**b) == (c**c) or (a**a) + (c**c) == (b**b) or (b**b) + (c**c) == (a**a):
+    if math.isclose(a**2 + b**2, c**2) or math.isclose(a**2 + c**2, b**2) or math.isclose(b**2 + c**2, a**2):
         triangletype+="Right "
     if a==b or b==c or a==c:
         triangletype+="Isosceles"
